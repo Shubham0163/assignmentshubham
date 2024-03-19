@@ -1,0 +1,51 @@
+/* Clock.css */
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+}
+
+.hour-hand, .minute-hand, .second-hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  background-color: black;
+}
+
+.hour-hand {
+  width: 6px;
+  height: 40px;
+  border-radius: 3px;
+  transform: translate(-50%, -100%);
+}
+
+.minute-hand {
+  width: 4px;
+  height: 60px;
+  border-radius: 2px;
+  transform: translate(-50%, -100%);
+}
+
+.second-hand {
+  width: 2px;
+  height: 70px;
+  border-radius: 1px;
+  background-color: red;
+  transform: translate(-50%, -100%);
+}
+
+.timezone {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
