@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
-import Clock from './Clock';
-import './App.css';
+import React from 'react';
+import "./App.css"
+import ClocksContainer from './ClockContainer';
 
-const App = () => {
-  const [selectedTimezones, setSelectedTimezones] = useState([
-    'Europe/London', // UK timezone
-    'America/New_York', // Default additional timezone
-    'Asia/Tokyo' // Default additional timezone
-  ]);
-
+function App() {
   return (
-    <div className="app">
-      {selectedTimezones.map((timezone, index) => (
-        <Clock key={index} timezone={timezone} />
-      ))}
+    <div className="App">
+      <h1>World Clocks</h1>
+      <ClocksContainer />
     </div>
   );
-};
+}
 
 export default App;
