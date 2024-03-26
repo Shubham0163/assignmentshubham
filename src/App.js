@@ -1,13 +1,16 @@
+// src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes
+import Table from './Table';
 import "./App.css"
-import ClocksContainer from './ClockContainer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>World Clocks</h1>
-      <ClocksContainer />
-    </div>
+    <Router>
+      <Routes> {/* Wrap Routes */}
+        <Route path="/" element={<Table />} /> {/* Use element prop */}
+      </Routes>
+    </Router>
   );
 }
 

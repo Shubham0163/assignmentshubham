@@ -1,42 +1,43 @@
-/* styles.css */
-.clock {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  margin-bottom: 20px;
+
+.table-container {
+  font-family: Arial, sans-serif;
 }
 
-.hour-hand, .minute-hand, .second-hand {
-  position: absolute;
-  background: #000;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.hour-hand {
-  width: 4px;
-  height: 60px;
-  top: 50px;
-  left: 98px;
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
 }
 
-.minute-hand {
-  width: 3px;
-  height: 80px;
-  top: 40px;
-  left: 99px;
+th {
+  background-color: #f2f2f2;
+  text-align: left;
 }
 
-.second-hand {
-  width: 1px;
-  height: 90px;
-  top: 30px;
-  left: 100px;
-  background: red;
+tbody tr:hover {
+  background-color: #f2f2f2;
 }
 
-.clocks-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+.pagination span {
+  padding: 8px 16px;
 }
