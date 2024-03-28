@@ -41,3 +41,26 @@ tbody tr:hover {
 .pagination span {
   padding: 8px 16px;
 }
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formField {
+  margin-bottom: 10px;
+}
+
+.formButton {
+  margin-top: 20px;
+}
+.MuiModal-root{
+  background: aquamarine !important;
+  height: 400px !important;
+  width: 460px !important;
+  padding-top: 100px !important;
+  
+}
+.MuiFormControl-root{
+  margin-bottom: 15px !important;
+}
